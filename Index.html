@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Agropecuária</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TELA INICIAL -->
+    <main id="tela-inicial" class="tela">
+        <div class="capa">
+
+            <div class="icone">🌾</div>
+
+            <h1>Missão Agropecuária</h1>
+
+            <h2>Desafio na Fazenda</h2>
+
+            <p>
+                Em uma fazenda, cada decisão pode fazer diferença.
+                Você está preparado para enfrentar os desafios do campo,
+                cuidar da produção e encontrar soluções sustentáveis?
+            </p>
+
+            <button id="btn-iniciar">Iniciar missão 🚜</button>
+
+        </div>
+    </main>
+
+
+    <!-- TELA DO JOGO -->
+    <main id="tela-jogo" class="tela escondido">
+
+        <div class="jogo">
+
+            <header>
+                <span>🌱 MISSÃO AGROPECUÁRIA</span>
+                <span id="progresso"></span>
+            </header>
+
+            <section class="pergunta-area">
+
+                <p id="nome-jogador"></p>
+
+                <h2 id="pergunta"></h2>
+
+                <div id="opcoes" class="opcoes"></div>
+
+                <p id="feedback"></p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- TELA FINAL -->
+    <main id="tela-final" class="tela escondido">
+
+        <div class="resultado">
+
+            <div class="icone-final">🚜🌾</div>
+
+            <h1>Missão concluída!</h1>
+
+            <p id="mensagem-final"></p>
+
+            <p id="pontuacao"></p>
+
+            <button id="btn-jogar-novamente">
+                Jogar Novamente 🔄
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
