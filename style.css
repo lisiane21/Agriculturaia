@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf5e3;
+    color: #183d1b;
+}
+
+/* TODAS AS TELAS */
+
+.tela {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.escondido {
+    display: none;
+}
+
+
+/* =========================
+   CAPA INICIAL
+========================= */
+
+#tela-inicial {
+    background:
+        linear-gradient(rgba(20, 70, 30, 0.55), rgba(20, 70, 30, 0.55)),
+        linear-gradient(135deg, #397d35, #9bcf70);
+}
+
+.capa {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 55px 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    border: 4px solid #76a95c;
+}
+
+.icone {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.capa h1 {
+    font-size: 42px;
+    color: #205c27;
+    margin-bottom: 10px;
+}
+
+.capa h2 {
+    font-size: 22px;
+    color: #5c863f;
+    margin-bottom: 25px;
+}
+
+.capa p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #39523a;
+}
+
+
+/* BOTÕES */
+
+button {
+    border: none;
+    background: #287a32;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1c5b25;
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   JOGO
+========================= */
+
+#tela-jogo {
+    background: #eaf5e3;
+}
+
+.jogo {
+    width: 100%;
+    max-width: 850px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    border: 2px solid #a8c995;
+}
+
+header {
+    background: #287a32;
+    color: white;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.pergunta-area {
+    padding: 45px;
+}
+
+#nome-jogador {
+    color: #60934b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#pergunta {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: #214c27;
+}
+
+
+/* OPÇÕES */
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcao {
+    width: 100%;
+    text-align: left;
+    background: #f1f8ed;
+    color: #244c29;
+    border: 2px solid #9cc68b;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.opcao:hover {
+    background: #dcefd2;
+    border-color: #4e8b48;
+    transform: translateX(5px);
+}
+
+
+/* FEEDBACK */
+
+#feedback {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+
+/* =========================
+   TELA FINAL
+========================= */
+
+#tela-final {
+    background:
+        linear-gradient(rgba(32, 92, 39, 0.75), rgba(70, 120, 50, 0.75)),
+        #78a95c;
+}
+
+.resultado {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.icone-final {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.resultado h1 {
+    color: #287a32;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.resultado p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#pontuacao {
+    font-weight: bold;
+    color: #287a32;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .tela {
+        padding: 15px;
+    }
+
+    .capa {
+        padding: 40px 25px;
+    }
+
+    .capa h1 {
+        font-size: 32px;
+    }
+
+    .capa p {
+        font-size: 16px;
+    }
+
+    .pergunta-area {
+        padding: 30px 20px;
+    }
+
+    #pergunta {
+        font-size: 23px;
+    }
+
+    header {
+        font-size: 13px;
+    }
+
+    .resultado {
+        padding: 35px 20px;
+    }
+
+}
